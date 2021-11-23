@@ -1,0 +1,58 @@
+{
+  "name": "react-method-elements",
+  "version": "1.0.0",
+  "description": "React components for Method Elements",
+  "main": "dist/index.ts",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "index.ts"
+  ],
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -c",
+    "dev": "./node_modules/.bin/rollup -c -w",
+    "pretest": "./node_modules/.bin/tsc -p tsconfig-test.json",
+    "test": "./node_modules/.bin/mocha --exit --timeout 100000 ./test-dist/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MethodFi/react-method-elements.git"
+  },
+  "keywords": [
+    "react",
+    "method",
+    "methodfi",
+    "method-elements"
+  ],
+  "author": "mdelcarmen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MethodFi/react-method-elements/issues"
+  },
+  "homepage": "https://github.com/MethodFi/react-method-elements#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.32",
+    "chai": "^4.3.4",
+    "esbuild": "^0.13.4",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.4.0",
+    "rollup": "^2.58.0",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-watch": "^4.3.1",
+    "typescript": "^4.4.4",
+    "typings": "^2.1.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
