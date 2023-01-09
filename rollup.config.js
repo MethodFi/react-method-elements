@@ -3,7 +3,7 @@ import esbuild from 'rollup-plugin-esbuild';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { terser } from 'rollup-plugin-terser';
 
-const name = require('./package.json').main.replace(/\.js$/, '');
+const name = require('./package.json').main.replace(/\.js|.ts$/, '');
 const bundle = (config) => ({
   ...config,
   input: 'src/index.ts',
