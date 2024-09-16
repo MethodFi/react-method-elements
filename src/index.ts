@@ -23,6 +23,7 @@ interface IEventAccountsPayload {
 interface IElementClientOnEventPayload {
   op: TEventTypes;
   element_type: string;
+  entity_id?: string;
   accounts?: IEventAccountsPayload[];
 }
 
